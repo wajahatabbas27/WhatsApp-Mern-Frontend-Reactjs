@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Chat from "./components/Chat";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='grid place-items-center h-screen bg-[#dadbd3]'>
+      <div className='flex bg-[#ededed] mt-[-50px] h-[90vh] w-[90vw]  shadow-2xl'>
+        <Sidebar />
+        <Chat />
+      </div>
     </div>
   );
 }
